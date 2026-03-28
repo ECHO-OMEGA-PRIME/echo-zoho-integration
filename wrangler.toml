@@ -32,3 +32,7 @@ ZOHO_API_BASE = "https://www.zohoapis.com"
 ZOHO_ACCOUNTS_URL = "https://accounts.zoho.com"
 WORKER_VERSION = "2.0.0"
 ZOHO_MAIL_URL = "https://mail.zoho.com"
+
+[[analytics_engine_datasets]]
+binding = "ANALYTICS"
+dataset = "echo_metrics"
