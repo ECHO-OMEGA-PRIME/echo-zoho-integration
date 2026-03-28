@@ -53,6 +53,8 @@ app.use('/api/*', async (c, next) => {
 // HEALTH & STATUS
 // ═══════════════════════════════════════════════════════════════════════
 
+app.get("/", (c) => c.json({ service: 'echo-zoho-integration', status: 'operational' }));
+
 app.get('/health', async (c) => {
   const start = Date.now();
   let dbOk = false;
